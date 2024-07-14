@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Video Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+        }
+        .main-content {
+            width: 80%;
+            max-width: 1200px;
+            margin-top: 20px;
+        }
+        .video-player {
+            width: 100%;
+            max-height: 500px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+        }
+        .upload-section {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .upload-section input[type="file"] {
+            display: none;
+        }
+        .upload-section label {
+            background-color: #ff0000;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .upload-section form {
+            margin-top: 10px;
+        }
+        .upload-section button {
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .video-list {
+            margin-top: 20px;
+        }
+        .video-list .video-item {
+            margin-bottom: 20px;
+        }
+        .video-list .video-item img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Video Platform</h1>
+    </header>
+    <div class="main-content">
+        <div class="video-player">
+            Video Player
+        </div>
+        <div class="upload-section">
+            <label for="file-upload">Upload Video</label>
+            <form>
+                <input type="file" id="file-upload" accept="video/*">
+                <button type="button" onclick="uploadVideo()">Upload</button>
+            </form>
+        </div>
+        <div class="video-list">
+            <div class="video-item">
+                <img src="https://via.placeholder.com/800x450" alt="Video Thumbnail">
+                <p>Sample Video Title</p>
+            </div>
+            <!-- Add more video items here -->
+        </div>
+    </div>
+    <script>
+        function uploadVideo() {
+            alert('Upload functionality is not implemented in this demo.');
+        }
+    </script>
+</body>
+</html>
